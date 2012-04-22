@@ -1,0 +1,88 @@
+
+require 'output'
+module Calculator
+  class HP48GX
+
+    attr_accessor :stack, :out
+
+    def initialize(output)
+      @out = output
+      self.stack = Array.new
+      @operators = ['+']
+    end
+
+    def push(arg)
+      @stack.push(arg)
+    end
+
+    def start
+      @out.puts "> "
+    end
+
+    def swap
+      @stack.push((@stack.pop(2)).reverse)
+    end
+
+    def pop
+      #if @stack.empty?
+      #  @output.puts "Can't pop empty stack"
+      #  raise IndexError, "Can't pop empty stack"
+      #else
+      @stack.pop
+      #end
+    end
+
+    def top
+      #if @stack.empty?
+      #  @output.puts "Stack empty"
+      #  raise IndexError, "stack is empty"
+      #else
+      @stack[@stack.size-1]
+      #end
+    end
+
+    def top2nd
+      @stack[@stack.size-2]
+    end
+    def handle_input(line)
+      line.chomp!
+#      p line
+#      p @stack
+      if is_operand(line)
+        @stack.push Float(line)
+      elsif is_operator(line)
+        handle_operator(line)
+      elsif is_function(line)
+        handle_function(line)
+      else
+        warn "invalid input: #{line}"
+      end
+    end
+
+    def is_operator(token)
+      @operators.include? token
+    end
+    def is_operand(token)
+      token =~ /\d+(\.\d+)?/
+    end
+    def is_function(token)
+      false
+    end
+
+    def handle_operator(op)
+#      puts "before operator"
+#      p @stack
+      if op == "+" then
+        @stack.push(do_plus)
+      end
+#      puts "after operator"
+#      p @stack
+    end
+
+    def do_plus
+      var1 = @stack.pop
+      var2 = @stack.pop
+      var1 + var2
+    end
+  end
+end
