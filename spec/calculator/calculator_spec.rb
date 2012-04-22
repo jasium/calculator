@@ -37,39 +37,41 @@ module Calculator
 
     end
 
-    describe "#4-function calculator"
-    it "adds when it receives '+'" do
-      lines = ["1","1"]
-      prep_calc(lines)
-      expect {
-        calc.handle_input("+")
+    describe "#4-function calculator" do
+      it "binary operators pop both operands, push result" do
+        prep_calc(["1","1"])
+        expect {
+          calc.handle_input("+")
+        }.to change{calc.stack.size}.by(-1)
+      end
+
+      it "adds when it receives '+'" do
+        prep_calc(["1","1",'+'])
         calc.top.should == 2
-      }.to change{calc.stack.size}.by(-1)
-    end
+      end
 
-    it "subtracts when it receives '-'" do
-      lines = ["5","3"]
-      prep_calc(lines)
-      expect {
-        calc.handle_input("-")
+      it "subtracts when it receives '-'" do
+        prep_calc(["5","3", '-'])
         calc.top.should == 2
-      }.to change{calc.stack.size}.by(-1)
-    end
+      end
 
-    it "pushes operands" do
-      pending
-    end
+      it "multiplies when it receives '*'" do
+        prep_calc(["5","5","*"])
+        calc.top.should == 25
+      end
 
-    it "interprets functions" do
-      pending
-    end
+      it "divides when it receives '/'" do
+        prep_calc(['10','2', '/'])
+        calc.top.should == 5
+      end
 
-    def prep_calc(lines)
-      input << lines
-      runner = Runner.new(input,output)
-      lines.each {|inp|
-        calc.handle_input(runner.get_next_line)
-      }
+      def prep_calc(lines)
+        input << lines
+        runner = Runner.new(input,output)
+        lines.each {|inp|
+          calc.handle_input(runner.get_next_line)
+        }
+      end
     end
   end
 end

@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e6670d-bf92-4ae5-ba60-0e866b5d77b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/calculator.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/four_function.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/step_definitions/calculator_steps.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/support/hooks.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/support/spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/48gx.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/input.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/output.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/runner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/48gx.rb" afterPath="$PROJECT_DIR$/lib/calculator/48gx.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" afterPath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
     </list>
     <ignored path="calculator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,10 +29,10 @@
       <file leaf-file-name="calculator_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="28" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
+            <state line="63" column="22" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#467#688#0" expanded="false" />
-                <element signature="e#724#988#0" expanded="false" />
+                <element signature="e#304#997#0" expanded="false" />
+                <element signature="e#1712#1893#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -56,16 +41,7 @@
       <file leaf-file-name="48gx.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.9488372">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runner.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/calculator/runner.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="6" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+            <state line="105" column="17" selection-start="1987" selection-end="1987" vertical-scroll-proportion="0.94728684">
               <folding />
             </state>
           </provider>
@@ -677,24 +653,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/runner.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+        <state line="10" column="6" selection-start="149" selection-end="149" vertical-scroll-proportion="0.2635659">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="28" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0">
+        <state line="63" column="22" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#467#688#0" expanded="false" />
-            <element signature="e#724#988#0" expanded="false" />
+            <element signature="e#304#997#0" expanded="false" />
+            <element signature="e#1712#1893#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.9488372">
+        <state line="105" column="17" selection-start="1987" selection-end="1987" vertical-scroll-proportion="0.94728684">
           <folding />
         </state>
       </provider>

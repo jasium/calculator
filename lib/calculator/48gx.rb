@@ -8,7 +8,7 @@ module Calculator
     def initialize(output)
       @out = output
       self.stack = Array.new
-      @operators = ['+']
+      @operators = ['+','-', '*', '/']
     end
 
     def push(arg)
@@ -74,6 +74,12 @@ module Calculator
 #      p @stack
       if op == "+" then
         @stack.push(do_plus)
+      elsif op == "-" then
+        @stack.push(do_minus)
+      elsif op == "*" then
+        @stack.push(do_times)
+      elsif op == "/" then
+        @stack.push(do_div)
       end
 #      puts "after operator"
 #      p @stack
@@ -82,7 +88,22 @@ module Calculator
     def do_plus
       var1 = @stack.pop
       var2 = @stack.pop
-      var1 + var2
+      var2 + var1
+    end
+    def do_minus
+      var1 = @stack.pop
+      var2 = @stack.pop
+      var2 - var1
+    end
+    def do_times
+      var1 = @stack.pop
+      var2 = @stack.pop
+      var2 * var1
+    end
+    def do_div
+      var1 = @stack.pop
+      var2 = @stack.pop
+      var2 / var1
     end
   end
 end
