@@ -1,8 +1,6 @@
-require "calculator"
-require "output"
 
 Before do
-  @out = Output.new
+  @out = Calculator::Output.output
 end
 
 Given /^a new calculator$/ do

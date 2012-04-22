@@ -1,7 +1,6 @@
 require "rspec"
 require "spec_helper"
-require "runner.rb"
-require "input.rb"
+
 module Calculator
   describe HP48GX do
     let(:output) { double('output').as_null_object }
