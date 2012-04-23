@@ -29,7 +29,7 @@
       <file leaf-file-name="calculator_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="9" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.0">
+            <state line="36" column="6" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -38,7 +38,7 @@
       <file leaf-file-name="48gx.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="10" selection-start="2202" selection-end="2202" vertical-scroll-proportion="0.8418605">
+            <state line="23" column="33" selection-start="400" selection-end="400" vertical-scroll-proportion="0.6062015">
               <folding />
             </state>
           </provider>
@@ -575,14 +575,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.0">
+        <state line="36" column="6" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="10" selection-start="2202" selection-end="2202" vertical-scroll-proportion="0.8418605">
+        <state line="23" column="33" selection-start="400" selection-end="400" vertical-scroll-proportion="0.6062015">
           <folding />
         </state>
       </provider>

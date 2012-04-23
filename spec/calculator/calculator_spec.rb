@@ -81,6 +81,12 @@ module Calculator
         }.to change{calc.stack.size}.by(0)
       end
 
+      it "swaps the top items on the stack when it receives 'swp'" do
+        prep_calc(['1','2','swp'])
+        calc.top.should == 1
+        calc.top2nd.should ==2
+      end
+
       def prep_calc(lines)
         input << lines
         runner = Runner.new(input,output)

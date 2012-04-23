@@ -8,7 +8,7 @@ module Calculator
     def initialize(output)
       @out = output
       self.stack = Array.new
-      @operators = ['+','-', '*','/','sqrt', 'neg']
+      @operators = ['+','-', '*','/','sqrt', 'neg', 'swp']
     end
 
     def push(arg)
@@ -20,7 +20,8 @@ module Calculator
     end
 
     def swap
-      @stack.push((@stack.pop(2)).reverse)
+      t = @stack.pop(2).reverse
+      t.each {|n| @stack.push(n)}
     end
 
     def pop
@@ -39,6 +40,10 @@ module Calculator
       #else
       @stack[@stack.size-1]
       #end
+    end
+
+    def top2
+      @stack.slice(-2)
     end
 
     def top2nd
@@ -84,10 +89,13 @@ module Calculator
         @stack.push(do_sqrt)
       elsif op == "neg" then
         @stack.push(do_neg)
+      elsif op == "swp" then
+        swap
       end
 #      puts "after operator"
 #      p @stack
     end
+
 
     def do_plus
       var1 = @stack.pop
