@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e6670d-bf92-4ae5-ba60-0e866b5d77b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/calculator.iml" afterPath="$PROJECT_DIR$/.idea/calculator.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/48gx.rb" afterPath="$PROJECT_DIR$/lib/calculator/48gx.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" afterPath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
@@ -30,52 +29,16 @@
       <file leaf-file-name="calculator_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="28" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.0">
+            <state line="69" column="9" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="48gx.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="48gx.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="27" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="step_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/step_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculator_steps.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/step_definitions/calculator_steps.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="output.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/calculator/output.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="193" selection-end="196" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="17" selection-start="140" selection-end="140" vertical-scroll-proportion="0.07906977">
+            <state line="115" column="10" selection-start="2202" selection-end="2202" vertical-scroll-proportion="0.8418605">
               <folding />
             </state>
           </provider>
@@ -107,8 +70,8 @@
         <option value="$PROJECT_DIR$/features/support/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/calculator_steps.rb" />
-        <option value="$PROJECT_DIR$/lib/calculator/48gx.rb" />
         <option value="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/calculator/48gx.rb" />
       </list>
     </option>
   </component>
@@ -584,9 +547,18 @@
         <state line="10" column="6" selection-start="149" selection-end="149" vertical-scroll-proportion="0.2635659" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/step_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" />
+        <state line="3" column="17" selection-start="140" selection-end="140" vertical-scroll-proportion="0.07906977">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/calculator/output.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="2" selection-start="195" selection-end="195" vertical-scroll-proportion="0.34263566">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/calculator_steps.rb">
@@ -594,28 +566,23 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/output.rb">
+    <entry file="file://$PROJECT_DIR$/features/support/step_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="193" selection-end="196" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="27" selection-start="2104" selection-end="2104" vertical-scroll-proportion="0.0">
+        <state line="4" column="18" selection-start="149" selection-end="149" vertical-scroll-proportion="0.105426356">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="28" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.0">
+        <state line="69" column="9" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="140" selection-end="140" vertical-scroll-proportion="0.07906977">
+        <state line="115" column="10" selection-start="2202" selection-end="2202" vertical-scroll-proportion="0.8418605">
           <folding />
         </state>
       </provider>

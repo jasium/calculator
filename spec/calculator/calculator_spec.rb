@@ -69,6 +69,11 @@ module Calculator
         calc.top.should == 4
       end
 
+      it "negates numbers when it receives 'neg'" do
+        prep_calc(['16','neg'])
+        calc.top.should == -16
+      end
+
       it "unary operators pop 1 operand, push result" do
         prep_calc(["16"])
         expect {
