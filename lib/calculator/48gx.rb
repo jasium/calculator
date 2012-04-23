@@ -8,7 +8,7 @@ module Calculator
     def initialize(output)
       @out = output
       self.stack = Array.new
-      @operators = ['+','-', '*', '/']
+      @operators = ['+','-', '*','/','sqrt']
     end
 
     def push(arg)
@@ -80,6 +80,8 @@ module Calculator
         @stack.push(do_times)
       elsif op == "/" then
         @stack.push(do_div)
+      elsif op == "sqrt" then
+        @stack.push(do_sqrt)
       end
 #      puts "after operator"
 #      p @stack
@@ -104,6 +106,9 @@ module Calculator
       var1 = @stack.pop
       var2 = @stack.pop
       var2 / var1
+    end
+    def do_sqrt
+      Math.sqrt(@stack.pop)
     end
   end
 end

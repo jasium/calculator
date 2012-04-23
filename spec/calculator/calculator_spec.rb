@@ -64,6 +64,18 @@ module Calculator
         calc.top.should == 5
       end
 
+      it "computes square roots when it receives 'sqrt'" do
+        prep_calc(['16','sqrt'])
+        calc.top.should == 4
+      end
+
+      it "unary operators pop 1 operand, push result" do
+        prep_calc(["16"])
+        expect {
+          calc.handle_input("sqrt")
+        }.to change{calc.stack.size}.by(0)
+      end
+
       def prep_calc(lines)
         input << lines
         runner = Runner.new(input,output)
