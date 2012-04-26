@@ -29,8 +29,10 @@
       <file leaf-file-name="calculator_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="70" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.7627907">
-              <folding />
+            <state line="107" column="36" selection-start="2951" selection-end="2951" vertical-scroll-proportion="0.8155039">
+              <folding>
+                <element signature="e#439#1131#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,7 +40,7 @@
       <file leaf-file-name="48gx.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="13" selection-start="1974" selection-end="2020" vertical-scroll-proportion="0.0">
+            <state line="32" column="11" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -575,15 +577,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="13" selection-start="1974" selection-end="2020" vertical-scroll-proportion="0.0">
+        <state line="32" column="11" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="70" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.7627907">
-          <folding />
+        <state line="107" column="36" selection-start="2951" selection-end="2951" vertical-scroll-proportion="0.8155039">
+          <folding>
+            <element signature="e#439#1131#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

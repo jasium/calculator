@@ -8,7 +8,7 @@ module Calculator
     def initialize(output)
       @out = output
       self.stack = Array.new
-      @operators = ['+','-', '*','/','sqrt', 'neg', 'swp','!']
+      @operators = ['+','-', '*','/','sqrt', 'neg', 'swp','!', 'rot', 'rotd']
     end
 
     def push(arg)
@@ -20,8 +20,19 @@ module Calculator
     end
 
     def swap
+      raise "Insufficient items on stack" if @stack.size < 2
       t = @stack.pop(2).reverse
       t.each {|n| @stack.push(n)}
+    end
+
+    def rot
+      raise "Insufficient items on stack" if @stack.size < 2
+      @stack.push(@stack.shift)
+    end
+
+    def do_rotd
+      raise "Insufficient items on stack" if @stack.size < 2
+      @stack.unshift(@stack.pop)
     end
 
     def pop
@@ -81,6 +92,10 @@ module Calculator
         @stack.push(do_neg)
       elsif op == "swp" then
         swap
+      elsif op == "rot" then
+        rot
+      elsif op == "rotd" then
+        do_rotd
       elsif op == "!" then
         @stack.push(do_factorial)
       end

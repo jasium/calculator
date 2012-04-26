@@ -70,7 +70,7 @@ module Calculator
         end
       end
 
-      describe "neg" do
+      describe "neg (negation)" do
         it "negates numbers when it receives 'neg'" do
           prep_calc(['16','neg'])
           calc.top.should == -16
@@ -81,13 +81,41 @@ module Calculator
 
       end
 
-      describe "swp (swap)" do
-        it "swaps the top items on the stack when it receives 'swp'" do
-          prep_calc(['1','2','swp'])
-          calc.top.should == 1
-          calc.top2nd.should ==2
+      describe "Stack"do
+        describe "swp (swap)" do
+          it "swaps the top items on the stack when it receives 'swp'" do
+            prep_calc(['1','2','swp'])
+            calc.top.should == 1
+            calc.top2nd.should ==2
+          end
+
+          it "Complains about 1-item stacks" do
+            expect {
+              prep_calc(['1','swp'])
+            }.to raise_error("Insufficient items on stack")
+            calc.top.should == 1
+            calc.stack.size.should == 1
+          end
         end
+
+        describe "rot (Rotate)" do
+          it "puts the bottom item on top of the stack" do
+            prep_calc(['1','2','3','4','rot'])
+            calc.top.should == 1
+          end
+        end
+
+        describe "rotd (Rotate down)" do
+          it "puts the top item on the bottom of the stack" do
+            prep_calc(['1','2','3','4','rotd'])
+            calc.top.should == 3
+          end
+        end
+
       end
+
+
+
     end
 
     describe "#4-function calculator" do
