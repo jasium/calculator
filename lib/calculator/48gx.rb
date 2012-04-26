@@ -8,7 +8,7 @@ module Calculator
     def initialize(output)
       @out = output
       self.stack = Array.new
-      @operators = ['+','-', '*','/','sqrt', 'neg', 'swp']
+      @operators = ['+','-', '*','/','sqrt', 'neg', 'swp','!']
     end
 
     def push(arg)
@@ -25,21 +25,11 @@ module Calculator
     end
 
     def pop
-      #if @stack.empty?
-      #  @output.puts "Can't pop empty stack"
-      #  raise IndexError, "Can't pop empty stack"
-      #else
       @stack.pop
-      #end
     end
 
     def top
-      #if @stack.empty?
-      #  @output.puts "Stack empty"
-      #  raise IndexError, "stack is empty"
-      #else
       @stack[@stack.size-1]
-      #end
     end
 
     def top2
@@ -91,9 +81,18 @@ module Calculator
         @stack.push(do_neg)
       elsif op == "swp" then
         swap
+      elsif op == "!" then
+        @stack.push(do_factorial)
       end
-#      puts "after operator"
-#      p @stack
+    end
+
+    def do_factorial
+      var1 = @stack.pop
+      if (0 == var1 - var1.floor)
+        (1..var1).inject(:*)
+      else
+        warn "Factorial only valid against integers"
+      end
     end
 
 

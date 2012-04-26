@@ -6,7 +6,13 @@ module Calculator
     let(:output) { double('output').as_null_object }
     let(:input) { Input.new } #double('input').as_null_object }
     let(:calc)   { HP48GX.new(output) }
-
+    def prep_calc(lines)
+      input << lines
+      runner = Runner.new(input,output)
+      lines.each {|inp|
+        calc.handle_input(runner.get_next_line)
+      }
+    end
     describe "#basic input: " do
       it "prompts for input on startup" do
         output.should_receive(:puts).with('> ')
@@ -33,8 +39,26 @@ module Calculator
           }.to change{calc.stack.size}.by(1)
         }
       end
-
     end
+
+
+    describe "#scientific calculator" do
+      it "computes the factorial when it receives '!'" do
+        prep_calc(['5','!'])
+        calc.top.should == 120
+      end
+
+      it "negates numbers when it receives 'neg'" do
+        prep_calc(['16','neg'])
+        calc.top.should == -16
+      end
+      it "swaps the top items on the stack when it receives 'swp'" do
+        prep_calc(['1','2','swp'])
+        calc.top.should == 1
+        calc.top2nd.should ==2
+      end
+    end
+
 
     describe "#4-function calculator" do
       it "binary operators pop both operands, push result" do
@@ -69,11 +93,6 @@ module Calculator
         calc.top.should == 4
       end
 
-      it "negates numbers when it receives 'neg'" do
-        prep_calc(['16','neg'])
-        calc.top.should == -16
-      end
-
       it "unary operators pop 1 operand, push result" do
         prep_calc(["16"])
         expect {
@@ -81,19 +100,7 @@ module Calculator
         }.to change{calc.stack.size}.by(0)
       end
 
-      it "swaps the top items on the stack when it receives 'swp'" do
-        prep_calc(['1','2','swp'])
-        calc.top.should == 1
-        calc.top2nd.should ==2
-      end
 
-      def prep_calc(lines)
-        input << lines
-        runner = Runner.new(input,output)
-        lines.each {|inp|
-          calc.handle_input(runner.get_next_line)
-        }
-      end
     end
   end
 end
