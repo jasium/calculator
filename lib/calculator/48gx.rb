@@ -86,15 +86,22 @@ module Calculator
       end
     end
 
-    def do_factorial
-      var1 = @stack.pop
-      if (0 == var1 - var1.floor)
-        (1..var1).inject(:*)
-      else
-        warn "Factorial only valid against integers"
-      end
-    end
+    #def do_factorial
+    #  var1 = @stack.pop
+    #  if (0 == var1 - var1.floor)
+    #    (1..var1).inject(:*)
+    #  else
+    #    raise "Factorial only valid against integers"
+    #  end
+    #end
 
+    def do_factorial
+      var1 = top
+      raise "Factorial only valid against positive integers" unless (0 == var1 - var1.floor)
+      raise "Factorial only valid against positive integers" unless (var1 > 1)
+      var1 = @stack.pop
+      (1..var1).inject(:*)
+    end
 
     def do_plus
       var1 = @stack.pop

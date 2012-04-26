@@ -43,22 +43,52 @@ module Calculator
 
 
     describe "#scientific calculator" do
-      it "computes the factorial when it receives '!'" do
-        prep_calc(['5','!'])
-        calc.top.should == 120
+
+      describe "! (factorial)" do
+        it "! (computes factorial)" do
+          prep_calc(['5','!'])
+          calc.top.should == 120
+
+          prep_calc(['5.5'])
+          lambda {
+            calc.handle_input("!")
+          }.should raise_error("Factorial only valid against positive integers")
+        end
+
+        it "errors when it gets a float" do
+          prep_calc(['5.5'])
+          lambda {
+            calc.handle_input("!")
+          }.should raise_error("Factorial only valid against positive integers")
+        end
+
+        it "errors when it gets a negative" do
+          prep_calc(['-5'])
+          lambda {
+            calc.handle_input("!")
+          }.should raise_error("Factorial only valid against positive integers")
+        end
       end
 
-      it "negates numbers when it receives 'neg'" do
-        prep_calc(['16','neg'])
-        calc.top.should == -16
+      describe "neg" do
+        it "negates numbers when it receives 'neg'" do
+          prep_calc(['16','neg'])
+          calc.top.should == -16
+
+          prep_calc(['-15','neg'])
+          calc.top.should == 15
+        end
+
       end
-      it "swaps the top items on the stack when it receives 'swp'" do
-        prep_calc(['1','2','swp'])
-        calc.top.should == 1
-        calc.top2nd.should ==2
+
+      describe "swp (swap)" do
+        it "swaps the top items on the stack when it receives 'swp'" do
+          prep_calc(['1','2','swp'])
+          calc.top.should == 1
+          calc.top2nd.should ==2
+        end
       end
     end
-
 
     describe "#4-function calculator" do
       it "binary operators pop both operands, push result" do
@@ -68,27 +98,27 @@ module Calculator
         }.to change{calc.stack.size}.by(-1)
       end
 
-      it "adds when it receives '+'" do
+      it "+" do
         prep_calc(["1","1",'+'])
         calc.top.should == 2
       end
 
-      it "subtracts when it receives '-'" do
+      it "- (subtraction)" do
         prep_calc(["5","3", '-'])
         calc.top.should == 2
       end
 
-      it "multiplies when it receives '*'" do
+      it "* (multiplication)" do
         prep_calc(["5","5","*"])
         calc.top.should == 25
       end
 
-      it "divides when it receives '/'" do
+      it "/  (division)" do
         prep_calc(['10','2', '/'])
         calc.top.should == 5
       end
 
-      it "computes square roots when it receives 'sqrt'" do
+      it "sqrt (square root)" do
         prep_calc(['16','sqrt'])
         calc.top.should == 4
       end
