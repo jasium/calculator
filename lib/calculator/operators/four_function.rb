@@ -14,7 +14,6 @@ module Calculator
     end
   end
   class Minus < Operator
-
       def self.token
         '-'
       end
@@ -26,8 +25,8 @@ module Calculator
         var2 - var1
       end
     end
-  class Times < Operator
 
+  class Times < Operator
     def self.token
       '*'
     end
@@ -39,8 +38,8 @@ module Calculator
       var2 * var1
     end
   end
-  class Div < Operator
 
+  class Div < Operator
     def self.token
       '/'
     end
@@ -52,8 +51,8 @@ module Calculator
       var2 / var1
     end
   end
-  class Sqrt < Operator
 
+  class Sqrt < Operator
     def self.token
       'sqrt'
     end

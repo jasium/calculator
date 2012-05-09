@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e6670d-bf92-4ae5-ba60-0e866b5d77b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/user.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/operator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/operator_factory.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/operators/scientific.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/calculator/operators/trig.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/four_function.feature" afterPath="$PROJECT_DIR$/features/four_function.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/calculator_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/calculator_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/48gx.rb" afterPath="$PROJECT_DIR$/lib/calculator/48gx.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" afterPath="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/operators/scientific.rb" afterPath="$PROJECT_DIR$/lib/calculator/operators/scientific.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" afterPath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
     </list>
     <ignored path="calculator.iws" />
@@ -34,21 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="48gx.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
+      <file leaf-file-name="scientific.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/calculator/operators/scientific.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="619" selection-end="647" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1225#1991#0" expanded="false" />
-              </folding>
+            <state line="80" column="14" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.8418605">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scientific.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/calculator/operators/scientific.rb">
+      <file leaf-file-name="calculator_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="184" selection-end="184" vertical-scroll-proportion="0.2635659">
+            <state line="76" column="0" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,13 +71,13 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/calculator_steps.rb" />
         <option value="$PROJECT_DIR$/features/four_function.feature" />
-        <option value="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/operator.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/operators/plus.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/operators/trig.rb" />
-        <option value="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/operator_factory.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/48gx.rb" />
+        <option value="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" />
+        <option value="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/operators/scientific.rb" />
       </list>
     </option>
@@ -139,6 +131,28 @@
               <option name="myItemId" value="calculator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -177,6 +191,16 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="operators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,11 +604,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194/gems/rspec-expectations-2.9.1/lib/rspec/matchers/operator_matcher.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194/gems/rspec-core-2.9.0/lib/rspec/core/hooks.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="379" column="0" selection-start="14052" selection-end="14052" vertical-scroll-proportion="0.0" />
@@ -630,13 +649,6 @@
         <state line="5" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.77272725" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/operator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="0.2372093">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/operator_factory.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="1" selection-start="0" selection-end="852" vertical-scroll-proportion="0.28992248">
@@ -644,32 +656,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/operators/four_function.rb">
+    <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="0" selection-end="1002" vertical-scroll-proportion="0.0">
+        <state line="37" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/operators/trig.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+        <state line="5" column="10" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
+    <entry file="file://$PROJECT_DIR$/lib/calculator/operator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="619" selection-end="647" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1225#1991#0" expanded="false" />
-          </folding>
+        <state line="13" column="51" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/calculator/operators/four_function.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="0" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/operators/scientific.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="184" selection-end="184" vertical-scroll-proportion="0.2635659">
+        <state line="80" column="14" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.8418605">
           <folding />
         </state>
       </provider>

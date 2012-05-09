@@ -57,7 +57,11 @@ module Calculator
           prep_calc(['0','cos'])
           calc.top.should == 1
         end
+      end
 
+      it "exp (exponent)" do
+        prep_calc(['2','3','exp'])
+        calc.top.should == 9
       end
       describe "! (factorial)" do
         it "! (computes factorial)" do

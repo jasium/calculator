@@ -68,4 +68,18 @@ module Calculator
       nil
     end
   end
+
+  class Exp < Operator
+    def self.token
+      'exp'
+    end
+    Operator.register(self)
+
+    def compute(stack)
+      raise "Insufficient items on stack" if stack.size < 2
+      num= stack.pop
+      exponent = stack.pop
+      num ** exponent
+    end
+  end
 end
