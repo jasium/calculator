@@ -1,6 +1,7 @@
+include Calculator
 
 Before do
-  @out = Calculator::Output.output
+  @out = Calculator::Output.new
 end
 
 Given /^a new calculator$/ do
@@ -47,7 +48,7 @@ When /^it starts$/ do
 end
 
 Then /^I should see the prompt$/ do
-  @out.should_contain ">"
+  @out.messages.should include "> "
 end
 
 Then /^I should see "([^"]*)"$/ do |arg1|
@@ -71,7 +72,7 @@ end
 Then /^the top two elements of the stack should exchange$/ do
   top = @calc.top
   top2nd = @calc.top2nd
-  @calc.swap
+  @calc.do_swap
   @calc.top2nd.should == top
   @calc.top.should == top2nd
 end

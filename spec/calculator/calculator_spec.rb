@@ -44,6 +44,21 @@ module Calculator
 
     describe "#scientific calculator" do
 
+      describe "performs trig functions" do
+        it "tan (tangent)" do
+          prep_calc(['0','tan'])
+          calc.top.should == 0
+        end
+        it "sin (sine)" do
+          prep_calc(['0','sin'])
+          calc.top.should == 0
+        end
+        it "cos (cosine)" do
+          prep_calc(['0','cos'])
+          calc.top.should == 1
+        end
+
+      end
       describe "! (factorial)" do
         it "! (computes factorial)" do
           prep_calc(['5','!'])
@@ -111,11 +126,7 @@ module Calculator
             calc.top.should == 3
           end
         end
-
       end
-
-
-
     end
 
     describe "#4-function calculator" do
