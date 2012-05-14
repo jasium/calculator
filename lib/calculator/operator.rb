@@ -1,18 +1,24 @@
 module Calculator
   class Operator
 
-    def compute
-      warn "#compute not implemented in child class!"
-      #todo figure out how to print a stack trace or the calling class
+    @@unregistered = []
+
+    def self.inherited(subclass)
+      @@unregistered << subclass
     end
 
-    def self.register(op)
-      OperatorFactory.get_factory.register_operator(op)
+    def self.register_subclasses(bank)
+      @@unregistered.each do |subclass|
+        bank.register_operator(subclass) unless bank.include? subclass.token
+      end
+    end
+
+    def compute
+      raise "#compute not implemented in child class #{self}!"
     end
 
     def token
-      warn "#token not implemented in child class!"
-      #todo figure out how to print a stack trace or the calling class
+      raise "#token not implemented in child class #{self}!"
     end
   end
 end

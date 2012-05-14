@@ -5,9 +5,8 @@ module Calculator
     def self.token
       '+'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       var1 = stack.pop
       var2 = stack.pop
       var2 + var1
@@ -17,9 +16,8 @@ module Calculator
       def self.token
         '-'
       end
-      Operator.register(self)
 
-      def compute(stack)
+      def self.compute(stack)
         var1 = stack.pop
         var2 = stack.pop
         var2 - var1
@@ -30,9 +28,8 @@ module Calculator
     def self.token
       '*'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       var1 = stack.pop
       var2 = stack.pop
       var2 * var1
@@ -43,9 +40,8 @@ module Calculator
     def self.token
       '/'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       var1 = stack.pop
       var2 = stack.pop
       var2 / var1
@@ -56,9 +52,8 @@ module Calculator
     def self.token
       'sqrt'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       Math.sqrt(stack.pop)
     end
   end

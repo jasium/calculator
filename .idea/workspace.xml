@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22e6670d-bf92-4ae5-ba60-0e866b5d77b2" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/calculator/operator_factory.rb" afterPath="$PROJECT_DIR$/lib/calculator/operator_bank.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/48gx.rb" afterPath="$PROJECT_DIR$/lib/calculator/48gx.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/operator.rb" afterPath="$PROJECT_DIR$/lib/calculator/operator.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" afterPath="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/operators/scientific.rb" afterPath="$PROJECT_DIR$/lib/calculator/operators/scientific.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" afterPath="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/calculator/operators/trig.rb" afterPath="$PROJECT_DIR$/lib/calculator/operators/trig.rb" />
     </list>
     <ignored path="calculator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,19 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scientific.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/calculator/operators/scientific.rb">
+      <file leaf-file-name="operator.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/calculator/operator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="14" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.8418605">
+            <state line="11" column="29" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calculator_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
+      <file leaf-file-name="operator_bank.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/calculator/operator_bank.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="59" selection-end="137" vertical-scroll-proportion="0.14003295">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="48gx.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/calculator/calculator.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/output.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/runner.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/input.rb" />
@@ -71,22 +81,39 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/calculator_steps.rb" />
         <option value="$PROJECT_DIR$/features/four_function.feature" />
-        <option value="$PROJECT_DIR$/lib/calculator/operator.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/operators/plus.rb" />
-        <option value="$PROJECT_DIR$/lib/calculator/operators/trig.rb" />
-        <option value="$PROJECT_DIR$/lib/calculator/operator_factory.rb" />
-        <option value="$PROJECT_DIR$/lib/calculator/48gx.rb" />
-        <option value="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" />
         <option value="$PROJECT_DIR$/spec/calculator/calculator_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/calculator/operator_factory.rb" />
+        <option value="$PROJECT_DIR$/lib/calculator/operators/trig.rb" />
         <option value="$PROJECT_DIR$/lib/calculator/operators/scientific.rb" />
+        <option value="$PROJECT_DIR$/lib/calculator/operators/four_function.rb" />
+        <option value="$PROJECT_DIR$/lib/calculator/48gx.rb" />
+        <option value="$PROJECT_DIR$/lib/calculator/operator.rb" />
+        <option value="$PROJECT_DIR$/lib/calculator/operator_bank.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1344" />
-    <option name="y" value="-4" />
-    <option name="width" value="1217" />
-    <option name="height" value="805" />
+    <option name="x" value="1351" />
+    <option name="y" value="27" />
+    <option name="width" value="1196" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -114,6 +141,60 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="calculator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="lib/calculator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="calculator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="lib/calculator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="operators">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="calculator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,53 +287,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="calculator">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="calculator">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="lib/calculator">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.lookFeel" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../codebreaker/features/step_definitions" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -523,15 +568,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1344" y="-4" width="1217" height="805" extended-state="6" />
+    <frame x="1351" y="27" width="1196" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6130031" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39910978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5548961" sideWeight="0.34878048" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55417955" sideWeight="0.34878048" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15284553" sideWeight="0.3264095" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -539,13 +584,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1527897" sideWeight="0.6706231" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15532286" sideWeight="0.44582042" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24978541" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.64552844" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24978541" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39910978" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -604,11 +649,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194/gems/rspec-core-2.9.0/lib/rspec/core/hooks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="379" column="0" selection-start="14052" selection-end="14052" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194/gems/rspec-core-2.9.0/lib/rspec/core/example.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="0" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.0" />
@@ -649,51 +689,58 @@
         <state line="5" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.77272725" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/operator_factory.rb">
+    <entry file="file://$PROJECT_DIR$/lib/calculator/operators/scientific.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="0" selection-end="852" vertical-scroll-proportion="0.28992248">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
+        <state line="35" column="13" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/operators/trig.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/operator.rb">
+    <entry file="file://$PROJECT_DIR$/lib/calculator/runner.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="51" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/calculator/operators/four_function.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+        <state line="13" column="4" selection-start="219" selection-end="219" vertical-scroll-proportion="0.3564516">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/calculator/calculator_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.0">
+        <state line="42" column="0" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/calculator/operators/scientific.rb">
+    <entry file="file://$PROJECT_DIR$/lib/calculator/48gx.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="14" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.8418605">
+        <state line="35" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/calculator/operator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/calculator/operator_bank.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="59" selection-end="137" vertical-scroll-proportion="0.14003295">
           <folding />
         </state>
       </provider>

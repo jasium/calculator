@@ -1,15 +1,17 @@
 
 require 'output'
-require 'operator_factory'
+require 'operator_bank'
 module Calculator
   class HP48GX
 
     attr_accessor :stack, :out
 
     def initialize(output)
+#      warn "#{self} created by #{caller[0..2]}"
       @out = output
-      @opfactory = OperatorFactory.new(Dir.pwd + '/lib/calculator/operators')
-      self.stack = Array.new
+      @opbank ||= OperatorBank.new
+      @opbank.load_from_dir(Dir.pwd + '/lib/calculator/operators')
+      @stack = Array.new
     end
 
     def push(arg)
@@ -43,25 +45,20 @@ module Calculator
       elsif is_operator(line)
         handle_operator(line)
       else
-        warn "invalid input: #{line}"
+        raise "invalid input: #{line}"
       end
     end
 
     def is_operator(token)
-      @opfactory.include? token
+      @opbank.include? token
     end
 
     def is_operand(token)
       token =~ /\d+(\.\d+)?/
     end
 
-    #def is_function(token)
-    #  false
-    #end
-
     def handle_operator(op)
-
-      operator = @opfactory.get_operator(op).new
+      operator = @opbank.get_operator(op)
       push(operator.compute(@stack))
     end
   end

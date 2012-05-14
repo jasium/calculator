@@ -5,9 +5,8 @@ module Calculator
     def self.token
       '!'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       var1 = stack[stack.size-1]  #      stack.top
       raise "Factorial only valid against positive integers" unless (0 == var1 - var1.floor)
       raise "Factorial only valid against positive integers" unless (var1 > 1)
@@ -20,9 +19,8 @@ module Calculator
     def self.token
       'neg'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       0 - stack.pop
     end
   end
@@ -32,9 +30,8 @@ module Calculator
     def self.token
       'swp'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       raise "Insufficient items on stack" if stack.size < 2
       t = stack.pop(2).reverse
       t.each {|n| stack.push(n)}
@@ -47,9 +44,8 @@ module Calculator
     def self.token
       'rot'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       raise "Insufficient items on stack" if stack.size < 2
       stack.shift
     end
@@ -60,9 +56,8 @@ module Calculator
     def self.token
       'rotd'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       raise "Insufficient items on stack" if stack.size < 2
       stack.unshift(stack.pop)
       nil
@@ -73,9 +68,8 @@ module Calculator
     def self.token
       'exp'
     end
-    Operator.register(self)
 
-    def compute(stack)
+    def self.compute(stack)
       raise "Insufficient items on stack" if stack.size < 2
       num= stack.pop
       exponent = stack.pop
